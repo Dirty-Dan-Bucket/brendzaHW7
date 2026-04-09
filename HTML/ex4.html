@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brendza's Exercise 4</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+  <script src="../JS/ex4.js" defer></script>
+</head>
+<body>
+  <h2>Data Form</h2>
+
+  <form id="infoForm">
+    <label class="form-label">Name:</label>
+    <input type="text" name="name" class="text-input"><br><br>
+
+    <label class="form-label">Email:</label>
+    <input type="email" name="email" class="text-input"><br><br>
+
+    <label class="form-label">Payment Type:</label><br>
+    <label><input type="radio" name="payment" value="cash"> Cash</label><br>
+    <label><input type="radio" name="payment" value="cc"> Credit Card</label><br>
+    <label><input type="radio" name="payment" value="gpay"> Google Pay</label><br>
+    <label><input type="radio" name="payment" value="apple"> Apple Pay</label><br><br>
+
+    <label>
+      <input type="checkbox" name="promotion" value="on">
+      Sign me up for special promotions
+    </label><br><br>
+
+    <label class="form-label">Preferred Location:</label>
+    <select name="location">
+      <option value="la">Los Angeles</option>
+      <option value="oc">Orange County</option>
+      <option value="sd">San Diego</option>
+    </select><br><br>
+
+    <button type="submit">Submit</button>
+    <button type="reset">Cancel</button>
+  </form>
+
+  <h3>Form Data Entered</h3>
+  <table id="results">
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </table>
+</body>
+</html>

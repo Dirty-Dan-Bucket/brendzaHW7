@@ -16,10 +16,10 @@ fetch("https://thejsway-server.herokuapp.com/api/countries", {
   },
   body: JSON.stringify(travelData)
 })
-.then(response => response.json())
-.then(result => {
-  console.log("Server confirmation:", result.message);
-})
-.catch(error => {
-  console.error("Error sending travel data:", error);
-});
+  .then(response => response.json())
+  .then(result => {
+    console.log("Server confirmation:", result.message);
+  })
+  .catch(error => {
+    console.error("Error sending travel data:", error);
+  });
